@@ -1,4 +1,4 @@
-import "./WhyChoose.css";
+import "./Whychoose.css";
 
 function WhyChoose() {
   const features = [
