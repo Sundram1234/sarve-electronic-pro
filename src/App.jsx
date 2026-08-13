@@ -1,5 +1,5 @@
 import Gallery from "./components/Gallery";
-import WhyChoose from "./components/WhyChoose";
+import WhyChoose from "./components/Whychoose";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
