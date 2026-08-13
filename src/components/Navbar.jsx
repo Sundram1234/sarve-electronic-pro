@@ -10,7 +10,13 @@ function Navbar() {
     <nav className="navbar">
 
       <div className="logo">
-        <h2>Sarve Electronic</h2>
+        <div className="logo">
+
+  <img src="/logo.png" alt="Sarve Electronic Logo" />
+
+  <h2>Sarve Electronic</h2>
+
+</div>
       </div>
 
       <div

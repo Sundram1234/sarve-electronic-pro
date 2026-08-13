@@ -17,6 +17,21 @@ function Hero() {
           CCTV Cameras, LED TV Repair, Arduino & IoT Components,
           Solar Solutions and Mobile Accessories.
         </p>
+        <div className="hero-trust">
+
+  <div className="trust-box">
+    ⭐⭐⭐⭐⭐ <span>4.9/5 Rating</span>
+  </div>
+
+  <div className="trust-box">
+    👥 <span>1000+ Happy Customers</span>
+  </div>
+
+  <div className="trust-box">
+    🛠️ <span>Expert Repair Service</span>
+  </div>
+
+</div>
 
         <div className="hero-buttons">
 

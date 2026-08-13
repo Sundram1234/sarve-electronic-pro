@@ -1,3 +1,5 @@
+import Gallery from "./components/Gallery";
+import WhyChoose from "./components/WhyChoose";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -13,15 +15,19 @@ import WhatsApp from "./components/WhatsApp";
 function App() {
   return (
     <>
+    
       <Navbar />
-      <Hero />
-      <Products />
-      <Services />
-      <About />
-      <Reviews />
-      <Contact />
-      <Footer />
-      <WhatsApp />
+<Hero />
+<WhyChoose />
+<Gallery />
+<Products />
+<Services />
+<About />
+<Reviews />
+<Contact />
+<Footer />
+<WhatsApp />
+      
     </>
   );
 }

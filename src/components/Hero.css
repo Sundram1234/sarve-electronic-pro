@@ -104,4 +104,44 @@
     justify-content:center;
 }
 
+}.hero-trust{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:35px 0;
+}
+
+.trust-box{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.2);
+    color:#fff;
+    padding:12px 20px;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.trust-box:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,.25);
+}
+
+.trust-box span{
+    margin-left:6px;
+}
+
+@media(max-width:768px){
+
+.hero-trust{
+    gap:12px;
+}
+
+.trust-box{
+    width:100%;
+    max-width:320px;
+}
+
 }

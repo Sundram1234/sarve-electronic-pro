@@ -101,4 +101,19 @@
     transform:translateY(0);
 }
 
+}.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo img{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+}
+
+.logo h2{
+  color:#00bfff;
+  font-size:28px;
 }

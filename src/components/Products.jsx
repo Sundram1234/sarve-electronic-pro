@@ -5,139 +5,99 @@ function Products() {
   const products = [
     {
       name: "Arduino UNO",
-      category: "Arduino & IoT",
       image: "/products/Aurdino.jpg",
-      desc: "Arduino boards and electronics development components."
+      desc: "Original Arduino board for IoT & Electronics Projects."
     },
-
     {
       name: "CCTV Camera",
-      category: "Security System",
       image: "/products/Camera.jpg",
-      desc: "HD CCTV camera installation and service."
+      desc: "HD CCTV Camera for Home & Office Security."
     },
-
     {
       name: "Inverter",
-      category: "Electrical",
       image: "/products/inverter.jpg",
-      desc: "Home inverter and battery solutions."
+      desc: "Reliable inverter for home and office backup."
     },
-
     {
       name: "LED Board",
-      category: "LED Electronics",
       image: "/products/led-board.jpg",
-      desc: "LED display boards and repairing service."
+      desc: "Premium LED Display & Advertising Boards."
     },
-
     {
       name: "LED Light",
-      category: "Lighting",
       image: "/products/led.jpg",
-      desc: "Energy efficient LED lights."
+      desc: "Energy Saving LED Lights."
     },
-
     {
       name: "Mobile Charger",
-      category: "Accessories",
       image: "/products/mobile-charger.jpg",
-      desc: "Quality mobile chargers and accessories."
+      desc: "Fast Charging Mobile Chargers."
     },
-
     {
       name: "Solar Panel",
-      category: "Solar Energy",
       image: "/products/solar.jpg",
-      desc: "Solar panel and renewable energy products."
+      desc: "High Efficiency Solar Panels."
     },
-
     {
       name: "Switch",
-      category: "Electrical",
       image: "/products/switch.jpg",
-      desc: "Electrical switches and accessories."
+      desc: "Electrical Switches & Accessories."
     }
   ];
 
-
-
-  const enquiry = (product) => {
-
-    const message =
-    `Hello Sarve Electronic,
-
-I want details about:
-${product}`;
-
-    window.open(
-      `https://wa.me/918234002449?text=${encodeURIComponent(message)}`,
-      "_blank"
-    );
-
-  };
-
-
-
   return (
 
-    <section id="products" className="products">
-
+    <section className="products" id="products">
 
       <h2>Our Products</h2>
 
+      <p className="product-subtitle">
+        Genuine Electronics, Electrical & IoT Products at Best Prices
+      </p>
 
       <div className="product-grid">
 
-
-        {products.map((item,index)=>(
-
+        {products.map((item, index) => (
 
           <div className="product-card" key={index}>
 
+            <img src={item.image} alt={item.name} />
 
-            <img 
-              src={item.image} 
-              alt={item.name}
-            />
+            <div className="product-info">
 
+              <h3>{item.name}</h3>
 
-            <h3>
-              {item.name}
-            </h3>
+              <p>{item.desc}</p>
 
+              <div className="product-buttons">
 
-            <span>
-              {item.category}
-            </span>
+                <a
+                  href="https://wa.me/918234002449"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="whatsapp-btn"
+                >
+                  WhatsApp
+                </a>
 
+                <button className="details-btn">
+                  View Details
+                </button>
 
-            <p>
-              {item.desc}
-            </p>
+              </div>
 
-
-            <button
-              onClick={()=>enquiry(item.name)}
-            >
-              View Details
-            </button>
-
+            </div>
 
           </div>
 
-
         ))}
 
-
       </div>
-
 
     </section>
 
   );
 
 }
-
 
 export default Products;
